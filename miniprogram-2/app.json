@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/audit/audit",
+    "pages/selected/selected",
+    "pages/detial/detail",
+    "pages/users/users",
+    "pages/comments/comments",
+    "pages/homeProducts/homeProducts",
+    "pages/search/search",
+    "pages/Administer/ProductsIsApproved/ProductsIsApproved",
+    "pages/Administer/UserCommentManagement/UserCommentManagement"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabs/home.png",
+        "selectedIconPath": "/images/tabs/home.png"
+      },
+      {
+        "pagePath": "pages/audit/audit",
+        "text": "审核",
+        "iconPath": "/images/tabs/envelop.png",
+        "selectedIconPath": "/images/tabs/envelop.png"
+      },
+      {
+        "pagePath": "pages/selected/selected",
+        "text": "精选",
+        "iconPath": "/images/tabs/diamond.png",
+        "selectedIconPath": "/images/tabs/diamond.png"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

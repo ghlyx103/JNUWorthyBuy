@@ -1,0 +1,86 @@
+<!--pages/audit/audit.wxml-->
+<view class="show">
+<button type="primary" bindtap="All">全部</button>
+<button type="warn" bindtap="Unshenhe">待审核</button>
+<button type="warn" bindtap="Shenhed">已审核</button>
+</view>
+
+<view wx:if="{{chooseAll == true}}">
+  <view>
+    <navigator url="/pages/detial/detail">
+    <view class="zhuangtai">
+      <view class="shijian">发布商品时间:2023/3/11</view>
+      <view class="daishenhe">待审核</view>
+    </view>
+    <view class="list-item">
+      <image class="item-image" src="/images/audit/recommendProduct.jpg"></image>
+      <view class="list-text">
+        <view class="shangpinming">男士裤子潮流夏季薄款宽松九分阔腿直筒</view>
+        <view class="jiage">¥50.8</view>
+      </view>
+    </view>
+  </navigator>
+  <view class="buttonBox">
+  <button class="success" bindtap="gotoSuccessfullyComment" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">通过审核</button>
+  <button class="cancel" bindtap="gotoIndex" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">驳回</button>
+  </view>
+  </view>
+  <view>
+    <navigator url="/pages/detial/detail">
+    <view class="zhuangtai">
+      <view class="shijian">发布商品时间:2022/3/11</view>
+      <view class="daishenhe">待审核</view>
+    </view>
+    <view class="list-item">
+      <image class="item-image" src="/images/audit/wanou.jpg"></image>
+      <view class="list-text">
+        <view class="shangpinming">三丽鸥帕恰狗</view>
+        <view class="jiage">¥9.8</view>
+      </view>
+    </view>
+  </navigator>
+  <view class="buttonBox">
+  <button class="success" bindtap="gotoSuccessfullyComment" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">通过审核</button>
+  <button class="cancel" bindtap="gotoIndex" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">驳回</button>
+  </view>
+  </view>
+</view>
+
+<view wx:if="{{chooseUnshenhe == true}}">
+  <view>
+    <navigator url="/pages/detial/detail">
+    <view class="zhuangtai">
+      <view class="shijian">发布商品时间:2023/3/11</view>
+      <view class="daishenhe">待审核</view>
+    </view>
+    <view class="list-item">
+      <image class="item-image" src="/images/audit/recommendProduct.jpg"></image>
+      <view class="list-text">
+        <view class="shangpinming">男士裤子潮流夏季薄款宽松九分阔腿直筒</view>
+        <view class="jiage">¥50.8</view>
+      </view>
+    </view>
+    </navigator>
+  <view class="buttonBox">
+  <button class="success" bindtap="gotoSuccessfullyComment" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">通过审核</button>
+  <button class="cancel" bindtap="gotoIndex" style="width: 80px; height: 35px; font-size: 25rpx; white-space: nowrap; display: flex; justify-content: center; align-items: center;">驳回</button>
+  </view>
+  </view>
+</view>
+
+<view wx:if="{{chooseShenhed == true}}">
+  <navigator url="/pages/detial/detail">
+    <view class="zhuangtai">
+      <view class="shijian">发布商品时间:2023/2/5</view>
+      <view class="daishenhe">已审核</view>
+    </view>
+    <view class="list-item">
+      <image class="item-image" src="/images/audit/shouchuan.jpg"></image>
+      <view class="list-text">
+        <view class="shangpinming">法式刺绣材料Diy手串</view>
+        <view class="jiage">¥11.8</view>
+      </view>
+    </view>
+    </navigator>
+</view>
+

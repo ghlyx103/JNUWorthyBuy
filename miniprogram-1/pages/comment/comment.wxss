@@ -1,0 +1,76 @@
+/* pages/comment/comment.wxss */
+/* page{
+  background-color: #f3f1f1;
+}
+.box{
+  width:372px;
+  height:300rpx;
+  border: 1px solid black;
+  margin: 0rpx;
+  flex-direction: column;
+  background-color:white;
+}
+.list-comment {
+  display:flex;
+  flex-direction: row;
+ 
+  width: 100%;
+  height: 120rpx;
+  margin-top: 5rpx;
+  position: relative; /*父元素位置要设置为相对*/
+  /* background: white;
+} */
+/* .nickname {
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+  height: 120rpx;
+  background: white;
+}
+.date {
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  height: 120rpx;
+} */
+
+/* 图片设置 */
+/* .comment-image {
+  width: 75rpx;
+  height: 75rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+} */ 
+/* 文字 */
+/* .text {
+  color: rgb(15, 14, 14);
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  position: relative;
+}
+ */
+.btn{
+  width: 100rpx;
+  height: 100rpx;
+}
+.addcomment{
+  flex-direction: column;
+  margin-top: 100rpx;
+  margin-left:  35%;
+  position:absolute; 
+  bottom:0
+}
+.add{
+  font-size: 15px;
+}
+
+.comment{
+border:1px solid #b3aeae;
+}
+
+
+.date{
+  float: right;
+  font-size: 10px;
+  
+}

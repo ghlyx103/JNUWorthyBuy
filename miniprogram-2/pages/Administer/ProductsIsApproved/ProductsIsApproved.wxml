@@ -1,0 +1,23 @@
+<!--pages/Administer/ProductsIsApproved/ProductsIsApproved.wxml-->
+<view>
+  <block wx:for="{{productList}}" wx:key="wx_id">
+    <view class="product" wx:if="{{!item.status}}">
+      <!--<image src="{{item.image}}" />-->
+      <text style="margin-top: 10px;margin-left: 10px;font-size: 15px;">发布商品时间：{{item.date}}</text>
+      <view class="dierhang">
+        <image class="tupian" src="/images/personal/mine.jpg"></image>
+        <view class="youbian">
+          <text class="item_text">商品名：{{item.goods_name}}</text>
+          <text class="item_text">推荐原因：{{item.goods_content}}</text>
+          <text class="item_text">购买渠道：{{item.shop}}</text>
+          <text class="item_text">价格：¥{{item.price}}</text>
+        </view>
+      </view>
+      <view class="anniu">
+        <button data-id="{{item.wx_id}}" bindtap="approveProduct" data-id="{{item.wx_id}}" style="margin: 10px;  border-radius: 10px;  border: 1px solid #ccc;">审核通过</button>
+        <button data-id="{{item.wx_id}}" bindtap="rejectProduct" data-id="{{item.wx_id}}" style="margin: 10px;  border-radius: 10px;  border: 1px solid #ccc;">驳回</button>
+      </view>
+    </view>
+  </block>
+</view>
+

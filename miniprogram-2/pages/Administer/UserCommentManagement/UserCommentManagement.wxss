@@ -1,0 +1,38 @@
+/* pages/Administer/UserCommentManagement/UserCommentManagement.wxss */
+page{
+  background-color: #f3f1f1;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600rpx;
+}
+.zuobian{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 600rpx;
+}
+.zuobiantext{
+  margin-top: 30px;
+}
+.youbian{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 600rpx;
+}
+.youbiantext1{
+  margin-top: 30px;
+}
+.touxiang{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 12.5px;
+}
+.youbiantext2{
+  margin-top: 17.5px;
+}

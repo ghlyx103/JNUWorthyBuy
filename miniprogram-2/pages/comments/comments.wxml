@@ -1,0 +1,10 @@
+<view wx:for="{{CommentList}}" wx:key="index" class="comment">
+ <image src="{{Profile}}" alt="" style="height: 20px;width: 20px;"/> {{item.comment}}
+ <button class="deleteComment" size="mini" bindtap="deleteComment" data-idx='{{index}}'>
+删除
+</button>
+ 
+  <view class="date">
+    {{CommentDate[index]}}
+  </view>
+</view>

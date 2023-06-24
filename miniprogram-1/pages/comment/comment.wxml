@@ -1,0 +1,52 @@
+<!--pages/comment/comment.wxml-->
+<!--pages/comment/comment.wxml-->
+<!-- <view class="box">
+  <view class="list-comment">
+      <image class="comment-image" src="/images/comment/reviewAvatars.jpg"></image>
+      <view class="nickname">
+        <view class="text">努力干饭</view>
+      </view>
+      <view class="date">
+        <view class="text">2023-4-17</view>
+      </view>
+  </view>
+  <text class="comment">包装很好很严密，裹了好几层。送礼很气派很到位，非常满意，一下买了两盒。好事成双，祝店家生意兴隆。</text>
+</view>
+<view class="box">
+  <view class="list-comment">
+      <image class="comment-image" src="/images/comment/reviewAvatars.jpg"></image>
+      <view class="nickname">
+        <view class="text">努力干饭</view>
+      </view>
+      <view class="date">
+        <view class="text">2023-4-17</view>
+      </view>
+  </view>
+  <text class="comment">包装很好很严密，裹了好几层。送礼很气派很到位，非常满意，一下买了两盒。好事成双，祝店家生意兴隆。</text>
+</view>
+<view class="box">
+  <view class="list-comment">
+      <image class="comment-image" src="/images/comment/reviewAvatars.jpg"></image>
+      <view class="nickname">
+        <view class="text">努力干饭</view>
+      </view>
+      <view class="date">
+        <view class="text">2023-4-17</view>
+      </view>
+  </view>
+  <text class="comment">包装很好很严密，裹了好几层。送礼很气派很到位，非常满意，一下买了两盒。好事成双，祝店家生意兴隆。</text>
+</view> -->
+<view wx:for="{{CommentList}}" wx:key="index" class="comment">
+ <image src="{{Profile}}" alt="" style="height: 20px;width: 20px;"/> {{item.comment}}
+ 
+  <view class="date">
+    {{CommentDate[index]}}
+  </view>
+</view>
+
+<button class="addcomment" size="mini" bindtap="onAddcomment"  >
+<image class="btn" src="/images/tabs/add.png"></image>
+<view>
+  我讲两句
+</view>
+</button>

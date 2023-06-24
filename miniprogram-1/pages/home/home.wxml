@@ -1,0 +1,86 @@
+<view class="search-container">
+<!-- 添加点击跳转 -->
+  <view class="left-search">
+  <navigator url="/pages/search/search">
+    <image class="item-search" src="/images/searchImage/search.png"/>  
+    <input type="text" placeholder="搜索"/> 
+  </navigator>
+  </view>
+  <view class="right-search">
+  </view>
+</view>
+
+<swiper class="swiper-container" 
+    indicator-dots="{{indicatorDots}}" 
+      autoplay="{{true}}" 
+      interval="{{2000}}" 
+      duration="{{duration}}" 
+      indicator-active-color="{{bg}}"
+      circular="{{true}}"
+      style='height:150px'>
+      <!-- indicator-dots interval="3000" autoplay="ture" circular="true" -->
+      
+ 
+      <!-- <swiper-item>
+        <!-- <image mode="widthFix" src="/images/home/drink.jpg"  style="width:100%;"></image> -->
+        <!-- <text>idx</text>
+      </swiper-item> -->
+        <view wx:if="{{dataList.length!=0}}">
+          <view wx:for="{{dataList}}"dataList-item="item" wx:for-index="idx">   
+            <view wx:if="{{idx<2}}">
+              <swiper-item bindtap="skip" data-id="{{idx}}">
+                <view >{{item.goods_name}}</view>
+              </swiper-item>
+            </view>
+          </view>
+        </view>
+     
+</swiper>
+
+
+
+<view>
+  <button>推荐商品</button>
+  <view class="line"></view>
+</view>
+
+<view class="Box">
+  <view class="list">
+    <view wx:if="{{dataList.length!=0}}">
+    <view wx:for="{{dataList}}"dataList-item="item" wx:for-index="idx">   
+      <view wx:if="{{idx>1&&idx%2===1}}">
+      <view class="list-item" bindtap="skip" data-id="{{idx}}">
+        <image class="img" src="/images/personal/recommendProduct.jpg"></image>
+        <view class="list-text">
+          <view class="goods_name"> {{item.goods_name}}</view>
+          <view class="price"> {{item.price}}¥+{{idx}}</view>
+        </view>
+      </view>   
+      <view class="line"></view> 
+    </view>
+    </view>
+  </view>
+</view>
+
+
+  <view class="list">
+    <view wx:if="{{dataList.length!=0}}">
+    <view wx:for="{{dataList}}"dataList-item="item" wx:for-index="idx">   
+      <view wx:if="{{idx>1&&idx%2===0}}">
+      <view class="list-item" bindtap="skip" data-id="{{idx}}">
+        <image class="img" src="/images/personal/recommendProduct.jpg"></image>
+        <view class="list-text">
+          <view class="goods_name"> {{item.goods_name}}</view>
+          <view class="price"> {{item.price}}¥+{{idx}}</view>
+        </view>
+      </view>   
+      <view class="line"></view> 
+    </view>
+  </view>
+</view>
+</view>
+  </view>
+
+
+
+

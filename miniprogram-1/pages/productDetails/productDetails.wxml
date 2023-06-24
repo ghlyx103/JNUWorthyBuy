@@ -1,0 +1,63 @@
+<!--pages/productDetails/productDetails.wxml-->
+<view class="imagebox">
+  <image src="/images/personal/focusProduct.jpg" mode=""/>
+</view>
+<view class="box1">
+  <view class="box1-1">
+    <view>
+      <text>￥{{rec.price}}</text>
+    </view>
+    <view>
+    <text>发布时间：{{rec.date}}</text>
+    </view>
+  </view>
+  <view>
+    <text>{{rec.goods_name}}</text>
+  </view>
+</view>
+
+<view class="box2">
+  <view>
+    <text>购买渠道：{{rec.shop}}</text>
+  </view>
+  <view>
+    <navigator url="/pages/comment/comment"><view>评价</view>
+    </navigator>
+  </view>
+</view>
+
+<view class="box3">
+  <!-- <view class="box3-1">
+    <image src="" mode=""/>
+  </view> -->
+  <view class="box3-2">
+    <!-- <image src="/images/productDetails/graph.png"/> -->
+    <canvas
+ style="width: 400px; height: 300px; position: relative; left: 80rpx; top: 0rpx"
+ canvas-id="yueEle"
+ binderror="canvasIdErrorCallback"
+></canvas>
+  </view>
+</view>
+<view class='col'>  
+        <view class='block1' style="position: relative">
+        <button class="btn" plain="true" bindtap="like" style="position: relative">
+            <image class="icon" src="{{like_url}}"></image>
+        </button>
+        <text class="people">{{like}}</text>
+      </view>
+
+        <view class='block'>
+          <button class="btn" plain="true" bindtap="dontlike">
+          <image class="icon" src="{{dontlike_url}}"></image>
+      </button>
+         <text class="people">{{dontlike}}</text>
+      </view>
+     
+        <view class='block3'>
+          <button class="btn" plain="true" bindtap="shoucang" style="position: relative">
+          <image class="icon" src="{{shoucang_url}}"></image>
+      </button>
+        </view>
+</view>
+

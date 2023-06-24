@@ -1,0 +1,17 @@
+/* pages/comments/comments.wxss */
+.comment{
+border:1px solid #b3aeae;
+}
+
+.date{
+  float: right;
+  font-size: 10px;
+}
+
+.deleteComment{
+  background-color: red;
+  font-size: 5px;
+  height: auto;
+  width: 5px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+<!--pages/commentSuccessfully/commentSuccessfully.wxml-->
+<view class="backbutton">
+  <button bindtap="gotoIndex">返回首页</button>
+</view>
+
+<view class="backbutton">
+  <button bindtap="back">返回评论</button>
+</view>

@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <view class="search-container"> -->
+<!-- 添加点击跳转 -->
+  <!-- <view class="left-search">
+  <navigator url="/pages/search/search">
+    <image class="item-image1" src="/images/searchImage/search.png"/>  
+    <input type="text" placeholder="搜索"/> 
+  </navigator>
+  </view>
+  <view class="right-search">
+
+  </view>
+</view> -->
+
+
+
+
+
+
+<!-- 添加点击跳转 -->
+<swiper class="swiper-container" 
+    indicator-dots="{{indicatorDots}}" 
+      autoplay="{{autoplay}}" 
+      interval="{{interval}}" 
+      duration="{{duration}}" 
+      indicator-active-color="{{bg}}"
+      circular="{{true}}"
+      style='height:150px'>
+      <!-- indicator-dots interval="3000" autoplay="ture" circular="true" -->
+      <navigator url="/pages/homeProducts/homeProducts">
+      <swiper-item>
+          <image mode="widthFix" src="/images/home/coffee.jpg"bindload='imgH'  style="width:100%;"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="/images/home/drink.jpg"bindload='imgH'  style="width:100%;"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="/images/home/noddles.jpg"bindload='imgH'style="width:100%;"></image>
+      </swiper-item>
+    </navigator>
+</swiper>
+
+
+
+<view>
+  <button>推荐商品</button>
+  <view class="line"></view>
+</view>
+
+<view class="Box">
+  <view class="list">
+    <navigator url="/pages/homeProducts/homeProducts">
+    <view class="item">
+      <image class="item-image" src="/images/home/drink.jpg"></image>
+        <view class="item-text">人头马佳酿</view>
+        <view class="item-textr">500¥</view>
+    </view>
+    </navigator>
+    <navigator url="/pages/homeProducts/homeProducts">
+    <view class="item">
+        <image class="item-image" src="/images/home/coffee.jpg"></image>
+          <view class="item-text">luckin coffee</view>
+          <view class="item-textr">25¥</view>
+    </view>
+    </navigator>
+  </view>
+
+  <view class="list">
+    <navigator url="/pages/homeProducts/homeProducts">
+    <view class="item">
+      <image class="item-image" src="/images/home/noddles.jpg"></image>
+        <view class="item-text">意大利面</view>
+        <view class="item-textr">15¥</view>
+    </view>
+    </navigator>
+    
+    <navigator url="/pages/homeProducts/homeProducts">
+    <view class="item">
+      <image class="item-image" src="/images/home/noddles.jpg"></image>
+        <view class="item-text">意大利面</view>
+        <view class="item-textr">15¥</view>
+    </view>
+    </navigator>
+  </view>
+</view>
+
+
+
+

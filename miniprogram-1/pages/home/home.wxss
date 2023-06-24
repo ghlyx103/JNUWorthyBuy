@@ -1,0 +1,142 @@
+/**index.wxss**/
+.search-container{
+  display: flex;
+  justify-content: space-between; /*两端布局 */
+  align-items: center;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+.left-search{
+  background-color: #eee;
+  flex: 2;
+}
+.left-search image{
+  width: 48rpx;
+  height: 48rpx;
+  padding: 10rpx 20rpx 10rpx 10rpx;
+  vertical-align: middle;
+  
+}
+.left-search input{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 88rpx);
+}
+.right-search{
+  padding-left: 20rpx;
+}
+
+/* pages/Home/home.wxss */
+.swiper-container{
+  height:0;
+}
+.Home{
+  display: flex;
+  position: relative;
+}
+.item_search {
+  height: 100rpx;
+  width: 100rpx;
+  margin-left: 0rpx;
+}
+.line {
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+}
+.context {
+  color: gray;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+.search-container{
+  display: flex;
+  justify-content: space-between; /*两端布局 */
+  align-items: center;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+.left-search{
+  background-color: #eee;
+  flex: 2;
+}
+.left-search image{
+  width: 48rpx;
+  height: 48rpx;
+  padding: 10rpx 20rpx 10rpx 10rpx;
+  vertical-align: middle;
+  
+}
+.left-search input{
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 88rpx);
+}
+.right-search{
+  padding-left: 20rpx;
+}
+.Box{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 300rpx;
+  margin-top: 10rpx;
+  position: relative; /*父元素位置要设置为相对*/
+  background: white;
+}
+.list {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 300rpx;
+  margin-top: 10rpx;
+  position: relative; /*父元素位置要设置为相对*/
+  background: white;
+}
+
+/* 图片设置 */
+.item-image {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+}
+/* 文字 */
+.item-text {
+  color: rgb(15, 14, 14);
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-left: 5rpx;
+  position: relative;
+}
+.item-textr {
+  color: red;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  position: relative;
+}
+/* 参数 */
+.img {
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+}
+/* 文字 */
+.goods_name {
+  color: rgb(15, 14, 14);
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-left: 5rpx;
+  position: relative;
+}
+.price {
+  color: red;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  position: relative;
+}

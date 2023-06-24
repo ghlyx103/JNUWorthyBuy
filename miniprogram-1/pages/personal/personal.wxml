@@ -1,0 +1,74 @@
+<!--pages/personal/personal.wxml-->
+<!-- <view>
+  测试展示区
+  <view wx:for="{{dataList}}">
+      <br/>
+      {{dataList.wx_id}}
+      <br/>
+      {{dataList.date}}
+      <br/>
+      {{dataList.goods_name}}
+      <br/>
+      {{dataList.goods_content}}
+      <br/>
+      {{dataList.price}}
+      <br/>
+      {{dataList.shop}}
+  </view>
+ </view> -->
+<!--上面用户头像及名字 -->
+<view class="user_info_warp">
+  <view class="user_img_wrap">
+    <view class="user_info">
+      <image class="user_icon" src="/images/personal/mine.jpg"></image>
+    </view>
+    <view class="user_id">账号：5201314</view>
+  </view>
+</view>
+<view class="show">
+  <button type="primary" bindtap="Income">我的推荐</button>
+<button type="warn" bindtap="Expenditure">我的关注</button>
+</view>
+
+<view wx:if="{{chooseIncome == true}}">
+  <view>
+  <view wx:if="{{dataList.length!=0}}">
+    <view wx:for="{{dataList}}"dataList-item="item" wx:for-index="idx">   
+      <view class="list-item" bindtap="skip" data-id="{{idx}}">
+        <image class="img" src="/images/personal/recommendProduct.jpg"></image>
+        <view class="list-text">
+          <view class="goods_name"> {{item.goods_name}}</view>
+          <view class="price"> {{item.price}}¥</view>
+          <view class="date"> {{item.date}}</view>
+          <view class="item-text">有35人认为很值</view>
+        </view>
+      </view>   
+      <view class="line"></view> 
+    </view>
+  </view>
+  </view>
+</view>
+
+<view wx:if="{{chooseExpenditure == true}}">
+    <view class="list-item">
+      <image class="item-image" src="/images/personal/focusProduct.jpg"></image>
+      <view class="list-text">
+        <view class="item-text">不锈钢杯子奶茶杯冷饮</view>
+        <view class="item-textr">5¥</view>
+        <view class="item-text">关注后 ↓5¥</view>
+      </view>
+    </view>
+  <view class="line"></view>
+  <navigator url="/pages/productDetails/productDetails">
+    <view class="list-item">
+      <image class="item-image" src="/images/personal/focusProduct.jpg"></image>
+      <view class="list-text">
+        <view class="item-text">不锈钢杯子奶茶杯冷饮</view>
+        <view class="item-textr">5¥</view>
+        <view class="item-text">关注后 ↓5¥</view>
+      </view>
+    </view>
+  </navigator>
+  <view class="line"></view>
+
+</view>

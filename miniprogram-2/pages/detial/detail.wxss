@@ -1,0 +1,31 @@
+/* pages/detial/detail.wxss */
+page{
+  background-color: #f3f1f1;
+}
+.shangpinxinxi{
+  display: flex;
+  background-color: white;
+}
+.zuo{
+  width: 40%;
+}
+.you{
+  width: 60%;
+}
+.item-image {
+  width: 240rpx;
+  height: 220rpx;
+  margin-left: 20rpx;
+  margin-top: 10px;
+}
+.shangpinming{
+  margin-top: 20px;
+}
+.text{
+  text-align: center;
+  margin-top: 25px;
+}
+.jiage{
+  margin-top: 87px;
+  text-align: center;
+}

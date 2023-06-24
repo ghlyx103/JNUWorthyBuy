@@ -1,0 +1,37 @@
+/* pages/Administer/ProductsIsApproved/ProductsIsApproved.wxss */
+page{
+  background-color: #f3f1f1;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dierhang{
+  display: flex;
+  flex-direction: row;
+}
+.tupian{
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.youbian{
+  display: flex;
+  flex-direction: column;
+}
+.item_text{
+  margin-top: 5px;
+  font-size: 15px;
+}
+.anniu{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}

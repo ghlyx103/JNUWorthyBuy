@@ -1,0 +1,21 @@
+<!--pages/detial/detail.wxml-->
+<view class="shangpinxinxi">
+  <view class="zuo">
+    <image class="item-image" src="/images/audit/recommendProduct.jpg"></image>
+    <view class="text">商品总价</view>
+    <view class="text">商品购买时间</view>
+    <view class="text">发布商品时间</view>
+    <view class="text">商品推荐人昵称</view>
+    <view class="text">商品推荐人联系电话</view>
+    <view class="text">购买渠道</view>
+  </view>
+  <view class="you">
+    <view class="shangpinming">男士裤子潮流夏季薄款宽松九分阔腿直筒</view>
+    <view class="jiage">¥50.8</view>
+    <view class="text">2023/5/8</view>
+    <view class="text">2023/5/13 13:22:11</view>
+    <navigator url="../users/users"><view class="text">小白鸽</view></navigator>
+    <view class="text">1668522524</view>
+    <view class="text">淘宝官方旗舰店</view>
+  </view>
+</view>

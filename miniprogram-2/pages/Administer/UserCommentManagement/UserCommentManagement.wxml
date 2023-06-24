@@ -1,0 +1,17 @@
+<!--pages/Administer/UserCommentManagement/UserCommentManagement.wxml-->
+<view class="container">
+  <view class="zuobian">
+    <text class="zuobiantext">昵称</text>
+    <text class="zuobiantext">头像</text>
+    <text class="zuobiantext">手机号码</text>
+    <text class="zuobiantext">推荐商品权限</text>
+    <text class="zuobiantext">评论权限</text>
+  </view>
+  <view class="youbian">
+    <text class="youbiantext1">{{nicheng}}</text>
+    <image class="touxiang" src="/images/personal/mine.jpg"></image>
+    <text class="youbiantext2">{{shoujihao}}</text>
+    <button bindtap="toggleRecommendPermission" style="font-size: 16px; background-color: royalblue; margin-top: 22.5px;">{{uesr_publish ? '关闭' : '开启'}}推荐权限</button>
+    <button bindtap="toggleCommentPermission" style="font-size: 16px; background-color: royalblue; margin-top: 15px;">{{uesr_comment ? '关闭' : '开启'}}评论权限</button>
+  </view>
+</view>

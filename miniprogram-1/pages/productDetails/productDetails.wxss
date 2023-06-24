@@ -1,0 +1,90 @@
+/* pages/productDetails/productDetails.wxss */
+.imagebox{
+  text-align:center;
+}
+.imagebox image{
+  height: 500rpx;
+  width: 500rpx;
+  border:1px solid black;  
+}
+.box1 {
+  border:2px solid black;
+  margin-bottom: 10rpx;
+}
+.box1-1{
+  border-bottom:1px solid black;
+}
+.box2{
+  border:2px solid black;
+  margin-bottom: 10rpx;
+}
+.box2 navigator{
+  border-top:1px solid black;
+}
+.box3-1 image{
+  height: 300rpx;
+  width: 300rpx;
+  border:1px solid black;
+}
+.box3-2 image{
+  height: 300rpx;
+  width: 300rpx;
+  border:1px solid black;
+}
+.box3{
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.col{
+	overflow:hidden;
+	margin-bottom:0;
+	background:#a7a4b4;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+  display:flex;
+  height: 40px;
+  justify-content:center;
+  flex-direction: row;
+}
+.icon{
+  height: 75rpx;
+  width: 75rpx;
+}  
+/**index.wxss**/
+ 
+.block{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+
+}
+.block1{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.block3{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.btn[plain]{
+  margin-top: 10rpx;
+  padding: 0;
+  border:none;   
+  width: 100rpx;
+  height: 150rpx;
+}
+.people{
+  margin-top: 10px;
+  color: rgb(204, 88, 88);
+  width: 40rpx;
+  height: 40rpx;
+}
